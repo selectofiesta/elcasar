@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selecto - Local de Fiestas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo Selecto" class="logo-img" />
+        <span>Selecto</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>Bienvenido a Selecto</h1>
+        <p>Tu espacio ideal para celebrar momentos inolvidables.</p>
+      </div>
+    </section>
+    <section id="sobre-nosotros" class="info-section">
+      <div class="info-image">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Local Selecto" />
+      </div>
+      <div class="info-text">
+        <h2>Sobre Selecto</h2>
+        <p>
+          Selecto es el local ideal para tus celebraciones más especiales. Con un ambiente elegante en tonos morados y dorados, te ofrecemos espacios amplios y versátiles para bodas, cumpleaños, eventos corporativos y mucho más.
+        </p>
+        <p>
+          Nuestro compromiso es brindar un servicio de calidad y crear experiencias inolvidables para ti y tus invitados.
+        </p>
+      </div>
+    </section>
+    <section id="sobre-nosotros" class="info-section">
+      <div class="info-text">
+        <h2>Sobre Selecto</h2>
+        <p>
+          Selecto es el local ideal para tus celebraciones más especiales. Con un ambiente elegante en tonos morados y dorados, te ofrecemos espacios amplios y versátiles para bodas, cumpleaños, eventos corporativos y mucho más.
+        </p>
+        <p>
+          Nuestro compromiso es brindar un servicio de calidad y crear experiencias inolvidables para ti y tus invitados.
+        </p>
+      </div>
+      <div class="info-image">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Local Selecto" />
+      </div>  
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Selecto. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
