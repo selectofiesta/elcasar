@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería - Selecto</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script> <!-- Asegúrate de tener el script.js enlazado -->
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">
+        <div class="logo">
+          <img src="logoselecto.jpg" alt="Logo Selecto" class="logo-img" />
+        </div>
+      </a>
+        <ul class="nav-links">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#galeria">Galería</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="index.html#reservas">Reservas</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de la galería con la imagen de fondo y la flecha -->
+    <section id="galeria" class="hero-galeria">
+        <!-- Contenedor de expansión con la imagen y la flecha -->
+        <div class="expand-container" id="expandContainer">
+            <!-- Imagen de fondo -->
+            <div class="background-container">
+                <img src="fondoselecto.jpg" alt="Imagen de fondo de la galería" class="background-image">
+            </div>
+            
+            <!-- Rectángulo negro con texto -->
+            <div class="overlay">
+                <p>Explora nuestra galería</p>
+            </div>
+
+            <!-- Flecha de expansión -->
+            <button class="expand-btn">
+                <span class="arrow-icon">↓</span>
+            </button>
+        </div>
+
+
+    <!-- Aquí iría el carrusel o galería de imágenes -->
+    <section id="carousel" class="carousel-section">
+      <div class="carousel">
+        <!-- Ejemplo de imágenes en el carrusel -->
+        <img src="img1.jpg" alt="Imagen 1" class="carousel-img">
+        <img src="img2.jpg" alt="Imagen 2" class="carousel-img">
+        <img src="img3.jpg" alt="Imagen 3" class="carousel-img">
+        <img src="img4.jpg" alt="Imagen 4" class="carousel-img">
+        <!-- Puedes agregar más imágenes aquí -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Selecto. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
