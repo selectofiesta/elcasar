@@ -1,38 +1,124 @@
-let lastScrollTop = 0;
-let scrollTimeout;
-const navbar = document.querySelector(".navbar");
+document.addEventListener('DOMContentLoaded', function () {
+  // Scroll para ocultar/mostrar la navbar
+  let lastScrollTop = 0;
+  let scrollTimeout;
+  const navbar = document.querySelector(".navbar");
 
-// Detectar el scroll y ocultar/mostrar la barra de navegación
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-  // Dirección del scroll
-  if (currentScroll > lastScrollTop) {
-    // Bajando: ocultar
-    navbar.classList.add("hide");
+    if (currentScroll > lastScrollTop) {
+      navbar.classList.add("hide");
+    } else {
+      navbar.classList.remove("hide");
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      navbar.classList.remove("hide");
+    }, 1000);
+  });
+
+  // Expandir imagen
+  const expandContainer = document.getElementById("expandContainer");
+  const expandBtn = document.querySelector(".expand-btn");
+
+  if (expandBtn && expandContainer) {
+    expandBtn.addEventListener("click", () => {
+      expandContainer.classList.toggle("expanded");
+      expandContainer.classList.toggle("hidden");
+    });
   } else {
-    // Subiendo: mostrar
-    navbar.classList.remove("hide");
+    console.warn("No se encontró '.expand-btn' o '#expandContainer'");
   }
 
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  // Menú hamburguesa
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
-  // Si se detiene el scroll por más de 1 segundo → mostrar navbar
-  clearTimeout(scrollTimeout);
-  scrollTimeout = setTimeout(() => {
-    navbar.classList.remove("hide");
-  }, 1000);
+  if (menuToggle && navLinks) {
+    console.log("Script cargado correctamente. Esperando clic en el menú...");
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+
+      if (navLinks.classList.contains('show')) {
+        console.log("Menú hamburguesa desplegado");
+      } else {
+        console.log("Menú hamburguesa ocultado");
+      }
+    });
+  } else {
+    console.warn("Elemento '.menu-toggle' o '.nav-links' no encontrado.");
+  }
 });
 
-// Variables para manejar el expandir/contraer de la imagen
-let expandContainer = document.getElementById("expandContainer");
-let expandBtn = document.querySelector(".expand-btn");
+// Carrusel de imágenes
+const track = document.querySelector('.carousel-track');
+const prevBtn = document.querySelector('.carousel-button.left');
+const nextBtn = document.querySelector('.carousel-button.right');
+const images = document.querySelectorAll('.carousel-img');
+const counter = document.querySelector('.carousel-counter');
+let currentIndex = 0;
 
-// Función para expandir o contraer la imagen de fondo y el rectángulo negro
-expandBtn.addEventListener("click", () => {
-  // Alternamos la clase "expanded" que activa la expansión de la imagen y el ocultamiento del overlay
-  expandContainer.classList.toggle("expanded");
-  
-  // También alternamos la clase "hidden" para controlar la visibilidad del rectángulo negro
-  expandContainer.classList.toggle("hidden");
-});
+function updateCarousel() {
+  const width = images[0].clientWidth;
+  track.style.transform = `translateX(-${currentIndex * width}px)`;
+
+  // Actualizar el contador (índice base 1)
+  counter.textContent = `${currentIndex + 1} de ${images.length}`;
+}
+
+// Botones manuales
+if (prevBtn) {
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = images.length - 1; // ir al final si estamos al inicio
+    }
+    updateCarousel();
+    resetAutoSlide();
+  });
+}
+
+if (nextBtn) {
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < images.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0; // volver al inicio si estamos al final
+    }
+    updateCarousel();
+    resetAutoSlide();
+  });
+}
+
+window.addEventListener('resize', updateCarousel);
+updateCarousel();
+
+// Función para avance automático
+let autoSlideInterval = setInterval(() => {
+  if (currentIndex < images.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  updateCarousel();
+}, 3000);
+
+// Reiniciar el intervalo automático si el usuario usa botones
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  autoSlideInterval = setInterval(() => {
+    if (currentIndex < images.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateCarousel();
+  }, 3000);
+}
+
