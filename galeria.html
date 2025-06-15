@@ -10,18 +10,24 @@
 <body>
   <header>
     <nav class="navbar">
-      <a href="index.html">
+      <a href="galeria.html">
         <div class="logo">
           <img src="logoselecto.jpg" alt="Logo Selecto" class="logo-img" />
         </div>
       </a>
-        <ul class="nav-links">
-          <li><a href="index.html#inicio">Inicio</a></li>
-          <li><a href="index.html#galeria">Galería</a></li>
-          <li><a href="index.html#servicios">Servicios</a></li>
-          <li><a href="index.html#reservas">Reservas</a></li>
-          <li><a href="index.html#contacto">Contacto</a></li>
-        </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -47,21 +53,62 @@
         </div>
 
 
-    <!-- Aquí iría el carrusel o galería de imágenes -->
     <section id="carousel" class="carousel-section">
-      <div class="carousel">
-        <!-- Ejemplo de imágenes en el carrusel -->
-        <img src="img1.jpg" alt="Imagen 1" class="carousel-img">
-        <img src="img2.jpg" alt="Imagen 2" class="carousel-img">
-        <img src="img3.jpg" alt="Imagen 3" class="carousel-img">
-        <img src="img4.jpg" alt="Imagen 4" class="carousel-img">
-        <!-- Puedes agregar más imágenes aquí -->
+      <h2>Imágenes del local</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn prev">&#10094;</button>
+
+        <div class="carousel-track">
+          <img src="fondoselecto.jpg" alt="Imagen 1" class="carousel-img">
+          <img src="logoselecto.jpg" alt="Imagen 2" class="carousel-img">
+          <img src="fondoselecto.jpg" alt="Imagen 3" class="carousel-img">
+          <img src="fondoselecto.jpg" alt="Imagen 4" class="carousel-img">
+        </div>
+
+        <button class="carousel-button left" aria-label="Anterior">&#10094;</button>
+        <button class="carousel-button right" aria-label="Siguiente">&#10095;</button>
+
+
+        
+        <!-- Indicador de posición -->
+        <div class="carousel-counter"></div>
       </div>
+    </section>
+
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Selecto. Todos los derechos reservados.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Selecto</h3>
+        <p>Alquiler de local para fiestas y eventos</p>
+      </div>
+      <div class="footer-contact">
+        <h3>Contacto</h3>
+        <p><strong>Teléfono:</strong> <a href="tel:+34 644 306 798">+34 644 30 67 98</a></p>
+        <p><strong>Dirección:</strong><a href="https://www.google.com/maps/place/Selecto+Fiestas+y+Eventos+privados/@40.7027316,-3.4332864,17z/data=!3m1!4b1!4m6!3m5!1s0xd43c92ab64f2a43:0x209b10dd09938068!8m2!3d40.7027316!4d-3.4332864!16s%2Fg%2F11y504dgxy?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"> Camino de Talamanca 17, El Casar, Guadalajara</a></p>
+        <p><strong>Email:</strong> <a href="mailto:selectoelcasar@gmail.com">selectoelcasar@gmail.com</a></p>
+      </div>
+      <div class="footer-social">
+        <h3>Síguenos</h3>
+        <a href="https://www.facebook.com/selectofiesta" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/selectofiesta/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Selecto. Todos los derechos reservados.</p>
+    </div>
   </footer>
+
+  <!-- FontAwesome CDN para iconos sociales -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </body>
 </html>
