@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menu Hamburguesa Test</title>
+<style>
+  body {
+    margin: 0; font-family: Arial, sans-serif;
+  }
+  nav {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    position: relative;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    width: 30px;
+  }
+  .menu-toggle span {
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+  }
+  ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  ul.nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+    ul.nav-links {
+      display: none;
+      flex-direction: column;
+      background: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 1rem 0;
+      margin: 0;
+      z-index: 1000;
+    }
+    ul.nav-links.active {
+      display: flex;
+    }
+    ul.nav-links li {
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Selecto</div>
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Galería</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    console.log('Menú toggled:', navLinks.classList.contains('active'));
+  });
+</script>
+
+</body>
+</html>

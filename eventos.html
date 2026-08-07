@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eventos - Selecto</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="eventos.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+      <a href="index.html" class="navbar__logo" aria-label="Selecto, volver al inicio">
+        <img src="logoselecto.jpg" alt="Logotipo Selecto" class="navbar__logo-img" />
+      </a>
+
+      <button class="navbar__toggle" id="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="navbar__links" id="nav-links" role="list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="eventos.html" class="is-active">Eventos</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Bienvenida">
+    <div class="hero__inner">
+      <span class="eyebrow">Acontecimientos en Selecto</span>
+      <h1 class="hero__title">Nuestros <span class="gold">Eventos</span></h1>
+      <div class="divider-line" aria-hidden="true"></div>
+      <p class="hero__sub">El local ideal para celebrar tus eventos</p>
+      <div class="hero__cta-group">
+        <a href="reservas.html" class="btn">Reserva tu fecha <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="galeria.html" class="btn btn--ghost">Ver galería <i class="fas fa-images" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="events-section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">Recuerdos que hablan por nosotros</span>
+          <h2>Así se vive un evento en <span class="gold">Selecto</span></h2>
+          <p>Cada celebración deja su propia huella. Estas son algunas de las experiencias que hemos tenido el privilegio de acompañar.</p>
+        </div>
+
+        <!-- Evento 1 -->
+        <article class="event-card reveal" role="article" aria-label="Cata de Vinos con Hacienda Albae">
+          <div class="event-card__media">
+            <div class="event-card__img-wrap">
+              <img src="fotos/cata1/cata1.jpeg" alt="Copas de vino dispuestas durante la Cata de Vinos en Selecto" loading="lazy" />
+            </div>
+
+            <div class="event-card__meta" aria-hidden="false">
+              <p class="event-card__meta-title">Cata gastronómica · Hacienda Albae</p>
+              <p class="event-card__meta-text">Fecha: 18 Jul 2026 · Lugar: Selecto</p>
+              <a href="reservas.html" class="btn btn--ghost" aria-label="Reservar evento">Reservar</a>
+            </div>
+          </div>
+
+          <div class="event-card__body">
+            <span class="event-card__tag"><i class="fas fa-wine-glass" aria-hidden="true"></i>Cata gastronómica</span>
+            <h2>Cata de Vinos con Hacienda Albae</h2>
+            <p>
+              El arte y la tradición vinícola tomaron nuestro local con la celebración de una Cata de Vinos excepcional, guiada por un reconocido experto y con el patrocinio de la prestigiosa bodega Hacienda Albae.
+              <br><br>
+              La velada fue un rotundo éxito, congregando a un público entusiasta deseoso de profundizar en los matices y secretos de algunos de los mejores caldos. Nuestro experto conductor elevó la experiencia a un nivel superior, compartiendo la historia, la elaboración y las notas de cata de cada vino.
+              <br><br>
+              Desde las primeras añadas hasta las propuestas más audaces de Hacienda Albae, cada copa fue una invitación a un viaje sensorial. Agradecemos enormemente la colaboración de la bodega y la impecable dirección de nuestro experto.
+              <br><br>
+              Estamos comprometidos a seguir ofreciendo experiencias de alta calidad como esta. ¡Estad atentos a nuestra web para los próximos eventos gastronómicos y culturales!
+            </p>
+          </div>
+        </article>
+
+        <!-- Evento 2 -->
+        <article class="event-card reveal" role="article" aria-label="I Torneo de Mus celebrado en Selecto">
+          <div class="event-card__media">
+            <div class="event-card__img-wrap">
+              <img src="fotos/mus1/mus1.jpeg" alt="Partida de mus durante el torneo celebrado en Selecto" loading="lazy" />
+            </div>
+
+            <div class="event-card__meta" aria-hidden="false">
+              <p class="event-card__meta-title">Torneo popular · Mus</p>
+              <p class="event-card__meta-text">Fecha: (primera edición) · Lugar: Selecto</p>
+              <a href="reservas.html" class="btn btn--ghost" aria-label="Reservar evento">Reservar</a>
+            </div>
+          </div>
+
+          <div class="event-card__body">
+            <span class="event-card__tag"><i class="fas fa-trophy" aria-hidden="true"></i>Torneo popular</span>
+            <h2>I Torneo de Mus celebrado en Selecto</h2>
+            <p>
+              Nuestro local vibró con la emoción y la estrategia del Primer Torneo de Mus que hemos tenido el placer de organizar. Y no podemos estar más contentos: ¡la convocatoria superó todas nuestras expectativas!
+              <br><br>
+              Queremos agradecer de corazón a todos los participantes por llenar nuestro espacio de buen ambiente, piques amistosos y, sobre todo, una deportividad ejemplar. Ver cómo los naipes volaban, los órdagos se cruzaban y las sonrisas llenaban cada mesa ha sido la mejor confirmación de que esta era una iniciativa muy esperada.
+              <br><br>
+              La acogida ha sido tan fantástica que no nos queda ninguna duda: el <b>Torneo de Mus</b> de <b>Selecto</b> ha llegado para quedarse. ¡Pronto anunciaremos fechas para la próxima edición!
+            </p>
+          </div>
+        </article>
+
+        <!-- Evento 3 -->
+        <article class="event-card reveal" role="article" aria-label="VI Edición de la Tarde de Mus en Selecto Fiesta">
+          <div class="event-card__media">
+            <div class="event-card__img-wrap">
+              <img src="fotos/mus6/1premio.jpeg" alt="Entrega de premio durante la VI Edición de la Tarde de Mus" loading="lazy" />
+            </div>
+
+            <div class="event-card__meta" aria-hidden="false">
+              <p class="event-card__meta-title">Torneo popular · VI Edición</p>
+              <p class="event-card__meta-text">Fecha: 25 Jul 2026 · Centro Comercial La Nevera</p>
+              <a href="reservas.html" class="btn btn--ghost" aria-label="Reservar evento">Reservar</a>
+            </div>
+          </div>
+
+          <div class="event-card__body">
+            <span class="event-card__tag"><i class="fas fa-trophy" aria-hidden="true"></i>Torneo popular</span>
+            <h2>¡Gran Éxito en la VI Edición de nuestra Tarde de Mus en Selecto Fiesta!</h2>
+            <p>
+              El pasado 25 de julio de 2026, nuestras instalaciones en el Centro Comercial La Nevera volvieron a convertirse en el epicentro de la estrategia y el buen ambiente con la celebración de la Sexta Edición de nuestra Tarde de Mus.
+              <br><br>
+              Una vez más, la respuesta de los aficionados ha sido inmejorable, llenando las mesas de emoción, órdagos memorables y esa deportividad tan característica de nuestro torneo. Las parejas participantes demostraron su destreza en los tableros en una tarde vibrante que volvió a poner de manifiesto la salud de la que goza este clásico encuentro en <b>Selecto Fiesta</b>.
+              <br><br>
+              Queremos dar las gracias a todos los jugadores por su entusiasmo y participación, haciendo que esta nueva edición haya sido todo un éxito rotundo.
+              <br><br>
+              ¡Estad atentos a nuestras redes y a la web porque el mus no se detiene! ¡Nos vemos en la próxima!
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA de cierre -->
+    <section class="cta-final reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">¿Tienes una fecha en mente?</span>
+          <h2>
+            El próximo recuerdo memorable puede ser el <span class="gold">tuyo</span>
+          </h2>
+          <p>
+            Cuéntanos qué estás celebrando y diseñamos la experiencia contigo, de principio a fin.
+          </p>
+        </div>
+        <a href="reservas.html" class="btn">Consultar disponibilidad <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <!-- BOTONES FLOTANTES (TELÉFONO Y WHATSAPP) -->
+    <a class="phone-float" href="tel:+34644306798" aria-label="Llamar por teléfono">
+      <i class="fas fa-phone" aria-hidden="true"></i>
+    </a>
+
+    <a class="whatsapp-float" href="https://wa.me/34644306798?text=%C2%A1Hola%20Selecto%21%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20alquilar%20el%20local%20para%20un%20evento." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__info">
+          <h3>Selecto</h3>
+          <p>Alquiler de local exclusivo para fiestas y eventos privados en El Casar, Guadalajara.</p>
+        </div>
+        <div class="footer__contact">
+          <h3>Contacto</h3>
+          <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+34644306798">+34 644 30 67 98</a></p>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <a href="https://www.google.com/maps/place/Selecto+Fiestas+y+Eventos+privados/@40.7027316,-3.4332864,17z" target="_blank" rel="noopener noreferrer">
+              Camino de Talamanca 17, El Casar
+            </a>
+          </p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:selectoelcasar@gmail.com">selectoelcasar@gmail.com</a></p>
+        </div>
+        <div class="footer__social">
+          <h3>Síguenos</h3>
+          <div class="footer__social-links">
+            <a href="https://wa.me/34644306798?text=%C2%A1Hola%20Selecto%21%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20alquilar%20el%20local%20para%20un%20evento." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/selectofiesta" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/selectofiesta/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Selecto. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

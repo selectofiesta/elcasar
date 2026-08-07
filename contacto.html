@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Selecto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contacto.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+      <a href="index.html" class="navbar__logo" aria-label="Selecto, volver al inicio">
+        <img src="logoselecto.jpg" alt="" class="navbar__logo-img" aria-hidden="true" />
+      </a>
+
+      <button class="navbar__toggle" id="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="navbar__links" id="nav-links" role="list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="contacto.html" class="is-active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Bienvenida">
+    <div class="hero__inner">
+      <span class="eyebrow">El Casar, Guadalajara</span>
+      <h1 class="hero__title">Hablemos de tu <span class="gold">evento</span></h1>
+      <div class="divider-line" aria-hidden="true"></div>
+      <p class="hero__sub">Elige cómo prefieres escribirnos, te respondemos encantados.</p>
+      <div class="hero__cta-group">
+        <a href="https://wa.me/34644306798?text=%C2%A1Hola%20Selecto%21%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20alquilar%20el%20local%20para%20un%20evento." target="_blank" rel="noopener noreferrer" class="btn">Escríbenos por WhatsApp <i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="reservas.html" class="btn btn--ghost">Reserva tu fecha <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- TARJETAS DE CONTACTO -->
+    <section class="contact-section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">Estamos a un clic</span>
+          <h2>¿Cómo prefieres <span class="gold">contactarnos</span>?</h2>
+          <p>Ya sea una llamada rápida, un mensaje o pasarte por el local: elige lo que te resulte más cómodo.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <a class="contact-card contact-card--accent reveal" href="https://wa.me/34644306798?text=%C2%A1Hola%20Selecto%21%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20alquilar%20el%20local%20para%20un%20evento." target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></span>
+            <span class="contact-card__label">WhatsApp</span>
+            <span class="contact-card__value">Respuesta más rápida</span>
+          </a>
+
+          <a class="contact-card reveal" href="tel:+34644306798">
+            <span class="contact-card__icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+            <span class="contact-card__label">Llámanos</span>
+            <span class="contact-card__value">+34 644 30 67 98</span>
+          </a>
+
+          <a class="contact-card reveal" href="mailto:selectoelcasar@gmail.com">
+            <span class="contact-card__icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+            <span class="contact-card__label">Correo electrónico</span>
+            <span class="contact-card__value">selectoelcasar@gmail.com</span>
+          </a>
+
+          <a class="contact-card reveal" href="https://www.google.com/maps/place/Selecto+Fiestas+y+Eventos+privados/@40.7027316,-3.4332864,17z" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+            <span class="contact-card__label">Ubicación</span>
+            <span class="contact-card__value">Camino de Talamanca 17, El Casar</span>
+          </a>
+
+          <a class="contact-card reveal" href="https://www.instagram.com/selectofiesta/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__icon"><i class="fab fa-instagram" aria-hidden="true"></i></span>
+            <span class="contact-card__label">Instagram</span>
+            <span class="contact-card__value">@selectofiesta</span>
+          </a>
+
+          <a class="contact-card reveal" href="https://www.facebook.com/selectofiesta" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__icon"><i class="fab fa-facebook-f" aria-hidden="true"></i></span>
+            <span class="contact-card__label">Facebook</span>
+            <span class="contact-card__value">Selecto Fiestas y Eventos</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="map-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Cómo llegar</span>
+          <h2>Te esperamos en <span class="gold">El Casar</span></h2>
+          <p>Camino de Talamanca 17, El Casar, Guadalajara</p>
+        </div>
+
+        <div class="contact-map reveal">
+          <iframe
+            src="https://www.google.com/maps?q=40.7027316,-3.4332864&z=16&output=embed"
+            title="Ubicación de Selecto en el mapa"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BOTONES FLOTANTES (TELÉFONO Y WHATSAPP) -->
+  <a
+    class="phone-float"
+    href="tel:+34644306798"
+    aria-label="Llamar por teléfono">
+    <i class="fas fa-phone" aria-hidden="true"></i>
+  </a>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/34644306798?text=%C2%A1Hola%20Selecto%21%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20alquilar%20el%20local%20para%20un%20evento."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escribir por WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__info">
+          <h3>Selecto</h3>
+          <p>Alquiler de local exclusivo para fiestas y eventos privados en El Casar, Guadalajara.</p>
+        </div>
+        <div class="footer__contact">
+          <h3>Contacto</h3>
+          <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+34644306798">+34 644 30 67 98</a></p>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <a href="https://www.google.com/maps/place/Selecto+Fiestas+y+Eventos+privados/@40.7027316,-3.4332864,17z" target="_blank" rel="noopener noreferrer">
+              Camino de Talamanca 17, El Casar
+            </a>
+          </p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:selectoelcasar@gmail.com">selectoelcasar@gmail.com</a></p>
+        </div>
+        <div class="footer__social">
+          <h3>Síguenos</h3>
+          <div class="footer__social-links">
+            <a href="https://wa.me/34644306798?text=%C2%A1Hola%20Selecto%21%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20alquilar%20el%20local%20para%20un%20evento." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/selectofiesta" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/selectofiesta/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Selecto. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+/* ── CAROUSEL ───────────────────────────────────────────────── */
+.carousel-section {
+  padding-block: var(--sp-xl);
+  background: var(--c-bg);
+}
+
+.carousel-wrap {
+  position: relative;
+  width: 90%;
+  max-width: 960px;
+  aspect-ratio: 4 / 3;
+  margin-inline: auto;
+  overflow: hidden;
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--c-border);
+  touch-action: pan-y;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.55s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Nav buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(17,16,24,0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212,175,55,0.3);
+  color: var(--c-gold);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background var(--t-fast), border-color var(--t-fast), transform var(--t-fast);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.carousel-btn:hover   { background: rgba(212,175,55,0.2); border-color: var(--c-gold); }
+.carousel-btn:active  { transform: translateY(-50%) scale(0.9); }
+.carousel-btn--prev   { left: 12px; }
+.carousel-btn--next   { right: 12px; }
+
+/* Counter */
+.carousel-counter {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  background: rgba(17,16,24,0.8);
+  color: rgba(212,175,55,0.9);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(212,175,55,0.18);
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 1.2rem;
+  padding-inline: 1rem;
+}
+
+.carousel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(212,175,55,0.22);
+  border: none;
+  cursor: pointer;
+  transition: background var(--t-fast), transform var(--t-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.carousel-dot.is-active {
+  background: var(--c-gold);
+  transform: scale(1.4);
+}
+
+/* Carousel — botones más pequeños en móvil */
+@media (max-width: 480px) {
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 0.95rem;      /* icono un poco más pequeño */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-btn--prev { left: 8px; }   /* menos separación del borde */
+  .carousel-btn--next { right: 8px; }
+}
+
+/* Si quieres aplicar una reducción intermedia en tablets pequeñas */
+@media (min-width: 481px) and (max-width: 768px) {
+  .carousel-btn {
+    width: 44px;             /* ligeramente más pequeño que desktop */
+    height: 44px;
+    font-size: 1rem;
+  }
+
+  .carousel-btn--prev { left: 10px; }
+  .carousel-btn--next { right: 10px; }
+}

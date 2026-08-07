@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selecto: local exclusivo de alquiler para fiestas privadas, cumpleaños, despedidas y eventos corporativos en El Casar, Guadalajara." />
+  <title>Selecto — Local de Fiestas y Eventos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+      <a href="index.html" class="navbar__logo" aria-label="Selecto, volver al inicio">
+        <img src="logoselecto.jpg" alt="" class="navbar__logo-img" aria-hidden="true" />
+      </a>
+
+      <button class="navbar__toggle" id="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="navbar__links" id="nav-links" role="list">
+        <li><a href="index.html" class="is-active">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Bienvenida">
+      <div class="hero__inner">
+        <span class="eyebrow">El Casar, Guadalajara</span>
+        <h1 class="hero__title">Bienvenidos a <span class="gold">Selecto</span></h1>
+        <div class="divider-line" aria-hidden="true"></div>
+        <p class="hero__sub">Tu espacio exclusivo para celebrar lo que más importa</p>
+        <div class="hero__cta-group">
+          <a href="reservas.html" class="btn">Reserva tu fecha <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="galeria.html" class="btn btn--ghost">Ver galería <i class="fas fa-images" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO 1 -->
+    <section class="info-section">
+      <div class="container">
+        <div class="info-section__inner reveal">
+          <div class="info-section__img-wrap">
+            <img src="fotos/local/img2.jpg" alt="Interior del local Selecto" loading="lazy" />
+          </div>
+          <div class="info-section__text">
+            <span class="eyebrow">Nuestro espacio</span>
+            <h2>Un local <span class="gold">diseñado</span> para celebrar</h2>
+            <p>Ubicado en una zona tranquila y accesible, Selecto está pensado al milímetro. Con capacidad para más de 80 personas, decoración moderna y elegante, e iluminación ambiental personalizable, cada rincón es una experiencia.</p>
+            <p>Ideal para fiestas privadas, despedidas, cumpleaños o eventos corporativos. Ofrecemos servicios de catering y staff especializado para que todo fluya sin que tengas que preocuparte de nada.</p>
+            <a href="galeria.html" class="btn" style="margin-top: 1.4rem">
+              Ver galería <i class="fas fa-images" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO 2 -->
+    <section class="info-section info-section--reversed">
+      <div class="container">
+        <div class="info-section__inner reveal">
+          <div class="info-section__img-wrap">
+            <img src="fotos/local/img19.jpg" alt="Ambiente nocturno en Selecto" loading="lazy" />
+          </div>
+          <div class="info-section__text">
+            <span class="eyebrow">La experiencia Selecto</span>
+            <h2>Energía, estilo y <span class="gold">privacidad</span></h2>
+            <p>Un espacio íntimo, lleno de energía y estilo. Equipado con tecnología de última generación en sonido e iluminación, Selecto se adapta a cualquier tipo de celebración: desde una reunión íntima hasta una gran fiesta.</p>
+            <p>¿Tu idea es bailar, disfrutar o simplemente relajarte? Aquí todo es posible. Privacidad total mientras tu evento cobra vida exactamente como lo imaginaste.</p>
+            <a href="contacto.html" class="btn" style="margin-top: 1.4rem">
+              Contáctanos <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPAMIENTO (MEJORADO) -->
+    <section class="amenities" aria-label="Equipamiento del local">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Equipamiento</span>
+          <h2>Cada detalle, <span class="gold">listo</span> para tu evento</h2>
+          <p>Mobiliario, imagen y sonido pensados para que tú solo tengas que disfrutar</p>
+        </div>
+
+        <div class="amenities__grid reveal" role="list">
+
+          <!-- CARD: Sillas y Mesas -->
+          <article class="amenity-card" role="article" aria-labelledby="amenity-1-title">
+            <figure class="amenity-card__media">
+              <img src="fotos/equipo/sillas.jpg" alt="Sillas del local Selecto" loading="lazy" />
+              <figcaption class="amenity-card__media-caption">
+                <i class="fas fa-chair" aria-hidden="true"></i>
+              </figcaption>
+            </figure>
+
+            <div class="amenity-card__body">
+              <span class="eyebrow">Sillas y mesas</span>
+              <h3 id="amenity-1-title" class="amenity-card__title">Confort y Versatilidad</h3>
+              <p class="amenity-card__desc">Aproximadamente 60 sillas ergonómicas y mesas modulares que permiten transformaciones rápidas del espacio. Perfectas para banquetes, presentaciones o pista de baile.</p>
+
+              <ul class="amenity-card__features" aria-hidden="false">
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Sillas plegables</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Mesas modulares y resistentes</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Fácil de montar</li>
+              </ul>
+
+              <div class="amenity-card__tags">
+                <span class="event-card__tag"><i class="fas fa-border-all" aria-hidden="true"></i> Mesas a juego</span>
+                <span class="event-card__tag"><i class="fas fa-chair" aria-hidden="true"></i> Sillas tapizadas</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD: Pantalla -->
+          <article class="amenity-card" role="article" aria-labelledby="amenity-2-title">
+            <figure class="amenity-card__media">
+              <img src="fotos/equipo/television.png" alt="Smart TV Toshiba 75 pulgadas" loading="lazy" />
+              <figcaption class="amenity-card__media-caption">
+                <i class="fas fa-tv" aria-hidden="true"></i>
+              </figcaption>
+            </figure>
+
+            <div class="amenity-card__body">
+              <span class="eyebrow">Pantalla</span>
+              <h3 id="amenity-2-title" class="amenity-card__title">Smart TV 75 Pulgadas</h3>
+              <p class="amenity-card__desc">Imagen cristalina y conectividad completa: HDMI, USB y screen-casting para compartir contenido en segundos. Ideal para presentaciones, vídeos o retransmisiones en vivo.</p>
+
+              <ul class="amenity-card__features">
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> HDMI y USB</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Compatible con smartphones</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Montaje seguro y visible</li>
+              </ul>
+
+              <div class="amenity-card__tags">
+                <span class="event-card__tag"><i class="fas fa-tv" aria-hidden="true"></i> Smart TV</span>
+                <span class="event-card__tag"><i class="fas fa-plug" aria-hidden="true"></i> Conexión HDMI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD: Sonido e Iluminación -->
+          <article class="amenity-card" role="article" aria-labelledby="amenity-3-title">
+            <figure class="amenity-card__media">
+              <img src="fotos/equipo/sonido-luces.jpg" alt="Sistema de sonido y luces profesionales" loading="lazy" />
+              <figcaption class="amenity-card__media-caption">
+                <i class="fas fa-volume-up" aria-hidden="true"></i>
+              </figcaption>
+            </figure>
+
+            <div class="amenity-card__body">
+              <span class="eyebrow">Sonido e iluminación</span>
+              <h3 id="amenity-3-title" class="amenity-card__title">Potencia e Inmersión</h3>
+              <p class="amenity-card__desc">Sistema de sonido profesional (más de 1000W), micrófono inalámbrico y paquete de iluminación tipo discoteca para modular la atmósfera de la fiesta al instante.</p>
+
+              <ul class="amenity-card__features">
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> 1000W de potencia</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Micrófono inalámbrico</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Luces RGB y modos dinámicos</li>
+              </ul>
+
+              <div class="amenity-card__tags">
+                <span class="event-card__tag"><i class="fas fa-volume-up" aria-hidden="true"></i> Altavoz profesional</span>
+                <span class="event-card__tag"><i class="fas fa-lightbulb" aria-hidden="true"></i> Luces LED</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="amenities__cta reveal" style="text-align:center; margin-top:2.2rem;">
+          <a href="galeria.html" class="btn">Ver galería completa <i class="fas fa-images" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+   <!-- ===========================================
+            ESTADÍSTICAS
+    =========================================== -->
+    <section class="stats reveal">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">Confían en nosotros</span>
+          <h2>
+            Más que un local, una <span class="gold">experiencia</span>
+          </h2>
+          <p>
+            Cada celebración es única y nuestro objetivo es que recuerdes el día,
+            no las preocupaciones.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+
+          <div class="stat-card">
+            <i class="fas fa-calendar-check"></i>
+            <h3><span class="counter" data-target="250">0</span>+</h3>
+            <p>Eventos celebrados</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-star"></i>
+            <h3><span class="counter" data-target="4.9" data-decimals="1">0</span>★</h3>
+            <p>Valoración media</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-face-smile"></i>
+            <h3><span class="counter" data-target="98">0</span>%</h3>
+            <p>Clientes satisfechos</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-users"></i>
+            <h3><span class="counter" data-target="1500">0</span>+</h3>
+            <p>Invitados recibidos</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===========================================
+            RESEÑAS
+    =========================================== -->
+    <section class="reviews reveal">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">Opiniones</span>
+          <h2>
+            Lo que dicen nuestros
+            <span class="gold">clientes</span>
+          </h2>
+          <p>
+            La satisfacción de nuestros clientes es nuestra mejor carta de presentación.
+          </p>
+        </div>
+
+        <!-- WIDGET DE RESEÑAS GOOGLE (TRUSTINDEX) -->
+        <div class="reviews-widget-wrapper">
+          <script defer async src='https://cdn.trustindex.io/loader.js?05465fd78e4e4480b2665b35834'></script>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===========================================
+            CTA FINAL
+    =========================================== -->
+    <section class="cta-final reveal">
+      <div class="container">
+
+        <h2>
+          ¿Preparado para celebrar un evento inolvidable?
+        </h2>
+
+        <p>
+          Reserva ahora tu fecha y disfruta de un espacio exclusivo pensado
+          para que solo tengas que preocuparte de pasarlo bien.
+        </p>
+
+        <a href="reservas.html" class="btn">
+          Reservar ahora
+          <i class="fas fa-calendar"></i>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- BOTONES FLOTANTES (TELÉFONO Y WHATSAPP) -->
+    <a
+      class="phone-float"
+      href="tel:+34644306798"
+      aria-label="Llamar por teléfono">
+      <i class="fas fa-phone" aria-hidden="true"></i>
+    </a>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/34644306798?text=%C2%A1Hola%20Selecto%21%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20alquilar%20el%20local%20para%20un%20evento."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Escribir por WhatsApp">
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__info">
+          <h3>Selecto</h3>
+          <p>Alquiler de local exclusivo para fiestas y eventos privados en El Casar, Guadalajara.</p>
+        </div>
+        <div class="footer__contact">
+          <h3>Contacto</h3>
+          <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+34644306798">+34 644 30 67 98</a></p>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <a href="https://www.google.com/maps/place/Selecto+Fiestas+y+Eventos+privados/@40.7027316,-3.4332864,17z" target="_blank" rel="noopener noreferrer">
+              Camino de Talamanca 17, El Casar
+            </a>
+          </p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:selectoelcasar@gmail.com">selectoelcasar@gmail.com</a></p>
+        </div>
+        <div class="footer__social">
+          <h3>Síguenos</h3>
+          <div class="footer__social-links">
+            <a href="https://wa.me/34644306798?text=%C2%A1Hola%20Selecto%21%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20alquilar%20el%20local%20para%20un%20evento." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/selectofiesta" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/selectofiesta/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Selecto. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
